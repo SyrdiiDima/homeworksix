@@ -25,7 +25,7 @@
            <section class="section-header">
              <div class="container">
                <div class="header">
-        <a href="/" class="logo"><span>Web</span>Studio</a>
+        <a href="/" class="logo"><span class="web">Web</span>Studio</a>
         <nav class="nav-container">
           <ul class="site-nav">
             <li class="nav-item" ><a href="" class="link" id="studio">Студия</a></li>
@@ -92,12 +92,82 @@
         
           <div class="backdrop is-hidden " data-modal>
             <div class="modal">
+              <form action="" class="form">
+                <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+                <div class="form-field">
+                <label > <span>Имя</span>
+                  <div class="name-icon">
+                  <input type="name" name="name" class="form-input" >
+                  <svg class="icon-person-black" width = '18' height ='18'>
+                  <use href= "./images/icons.svg#icon-person-black">
+
+                  </use>
+                  </svg>
+                  </div>
+                </label>
+                </div>
+               <div class="form-field">
+                  <label ><span>Телефон</span>
+                    <div class="name-tel">
+                  <input type="tel" name="tel" >
+                  <svg class="icon-phone-black" width = '18' height ='18'>
+                  <use href= "./images/icons.svg#icon-phone-black">
+
+                  </use>
+                  </svg>
+                  </div>
+                </label> 
+              </div>
+               
+              <div class="form-field"> 
+                <label ><span>Почта</span>
+                  <div class="name-email">
+                  <input type="email" name="email" >
+                   <svg class="icon-email-black" width = '18' height ='18'>
+                  <use href= "./images/icons.svg#icon-email-black">
+
+                  </use>
+                  </svg>
+                  </div>
+                </label>
+              </div>
+                <div class="form-field">
+                  <label > <span>Комментарий</span>
+                  <textarea name="coment"  rows="10" placeholder="Введите текст"></textarea>
+                </label>
+              </div>
+              
+                
+              <div class="check-decor" >
+                  <label class="agrees">
+                    <div class="check-general">
+                  <input type="checkbox" name="name" class="checkbox"   >
+
+                  <svg class="icon-complete">
+                    <use href= "./images/icons.svg#icon-icon-complete">
+
+                    </use>
+                  </svg>
+                  <span>Соглашаюсь с рассылкой и принимаю</span> <a href="">Условия договора</a>
+                </div>  
+                </label>
+              
+              </div>
+              <div class="button-sent">
+                <button type="submit" class="form-button">
+                  <span>Отправить</span>
+                </button>
+              </form>   
+                </div>
               <button type="button" class="close" data-modal-close>
                 <svg width = '11' height = '11' >
-                  <use href ="./images/close.svg#icon-close-black"></use>
+                  <use href ="./images/close.svg#icon-icon-close-modal"></use>
                 </svg>
+
               </button>
+
             </div>
+            
           </div>
       
 
@@ -443,7 +513,7 @@
         <div class="general-footer">
           <div  class="footer-info">
         <div class="footer-logo">
-          <a href="/" class="logo-finish"><span>Web</span>Studio</a>
+          <a href="/" class="logo-finish"><span class="web">Web</span>Studio</a>
         </div>
 
         <div class="info-finish">
@@ -480,7 +550,25 @@
             <use href ="./images/icons.svg#icon-linkedin_footter"></use>
           </svg></a></li>
         </ul>
-        </div></div>
+        </div>
+      
+        <div class="footer-window">
+          <h3 class="window-title">Подпишитесь на рассылку</h3>
+          <form >
+        <div class="form-window">  
+          <input class="subscribe" type="email"  name="email"  placeholder="E-mail">
+            <button class="button-subscribe"  type="submit"> <span>Подписаться </span>
+              <svg class="icon-subscribe">
+                  <use href = "./images/icons.svg#icon-icon-send"></use>
+                </svg>
+
+            </button>
+        </div>
+           
+          </form>
+
+        </div>
+      </div>
         </div>
       </footer>
     </div>
